@@ -24,16 +24,16 @@ export default class Focus extends Component {
 
                   <h1 className="focus-title">Easy to Use</h1>
                   <div className="focus-text">
-                    The code I write is intuitive and reusable. Extra comments
-                    not needed.
+                    The code I write is intuitive & reusable. Extra comments not
+                    needed.
                   </div>
                 </Grid>
                 <Grid className="grid-item" item xs={6} sm={6}>
                   <span className="material-icons focus-icon">extension</span>
                   <h1 className="focus-title">Feature Rich</h1>
                   <div className="focus-text">
-                    I innovate while I deliver. Improvements and features always
-                    on my mind.
+                    I innovate while I deliver. Improvements & features are
+                    always on my mind.
                   </div>
                 </Grid>
                 <Grid className="grid-item" item xs={6} sm={6}>
@@ -42,15 +42,16 @@ export default class Focus extends Component {
                   </span>
                   <h1 className="focus-title">Simplistic</h1>
                   <div className="focus-text">
-                    My implementations are simple.
+                    My implementations are simple. Overcomplicating slows things
+                    down.
                   </div>
                 </Grid>
                 <Grid className="grid-item" item xs={6} sm={6}>
                   <span className="material-icons focus-icon">access_time</span>
                   <h1 className="focus-title">Efficient</h1>
                   <div className="focus-text">
-                    My build process is no-nonsense and products are always
-                    delivered in a timely manner
+                    My development process is no-nonsense. Dilverables are
+                    always completed on-time or earlier.
                   </div>
                 </Grid>
               </Grid>
