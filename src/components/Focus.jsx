@@ -18,7 +18,7 @@ export default class Focus extends Component {
             <LightSpeed left cascade>
               <Grid container spacing={3}>
                 <Grid className="grid-item" item xs={6} sm={6}>
-                  <span class="material-icons focus-icon">
+                  <span className="material-icons focus-icon">
                     accessibility_new
                   </span>
 
@@ -29,7 +29,7 @@ export default class Focus extends Component {
                   </div>
                 </Grid>
                 <Grid className="grid-item" item xs={6} sm={6}>
-                  <span class="material-icons focus-icon">extension</span>
+                  <span className="material-icons focus-icon">extension</span>
                   <h1 className="focus-title">Feature Rich</h1>
                   <div className="focus-text">
                     Your customers will be impressed with what they can
@@ -37,7 +37,9 @@ export default class Focus extends Component {
                   </div>
                 </Grid>
                 <Grid className="grid-item" item xs={6} sm={6}>
-                  <span class="material-icons focus-icon">view_carousel</span>
+                  <span className="material-icons focus-icon">
+                    view_carousel
+                  </span>
                   <h1 className="focus-title">Simplistic</h1>
                   <div className="focus-text">
                     I use simple, yet memorable designs that offer relaxed color
@@ -45,7 +47,7 @@ export default class Focus extends Component {
                   </div>
                 </Grid>
                 <Grid className="grid-item" item xs={6} sm={6}>
-                  <span class="material-icons focus-icon">access_time</span>
+                  <span className="material-icons focus-icon">access_time</span>
                   <h1 className="focus-title">Efficient</h1>
                   <div className="focus-text">
                     My build process is no-nonsense and products are always

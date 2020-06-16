@@ -38,9 +38,9 @@ class Container extends Component {
     }
     return (
       <div className="container">
-        <div class="background-container"></div>
-        <div class="clouds"></div>
-        <div class="stars"></div>
+        <div className="background-container"></div>
+        <div className="clouds"></div>
+        <div className="stars"></div>
         {/* <Fade> */}
         <About projectScroll={this.handleOnClick} />
         <hr style={hr_style} />

@@ -11,6 +11,7 @@ import JS from "../images/js.png"
 import HTML from "../images/html5.png"
 import Svelte from "../images/svelte.png"
 import Form from "./Form"
+import axios from "axios"
 // import Twitch from '../images/twitch.gif';
 
 import GithubIcon from "../images/github.png"
@@ -21,17 +22,17 @@ export default class OtherThings extends Component {
     this.state = { githubData: [] }
   }
   componentWillMount() {
-    fetch("https://api.github.com/users/zeepk/repos", {
-      headers: {
-        Authorization: "8ecf1ab2ae445bc4abe3e7404b2c89bb8120fed8",
-      },
-    })
-      .then(response => response.json())
-      .then(data =>
+    axios
+      .get("https://api.github.com/users/zeepk/repos", {
+        headers: {
+          Authorization: "8ecf1ab2ae445bc4abe3e7404b2c89bb8120fed8",
+        },
+      })
+      .then(data => {
         this.setState({
-          githubData: data,
+          githubData: data.data,
         })
-      )
+      })
   }
   render() {
     const github_data = this.state.githubData.sort((a, b) =>
@@ -47,7 +48,7 @@ export default class OtherThings extends Component {
       } else if (repo.language === "HTML" || repo.language === "CSS") {
         icon = <img src={HTML} className="github-icon" alt="html" />
       } else if (repo.language === "Java") {
-        icon = <span class="material-icons mobile-icon">phone_iphone</span>
+        icon = <span className="material-icons mobile-icon">phone_iphone</span>
       } else if (!repo.language) {
         icon = <img src={Svelte} className="github-icon" alt="svelte" />
       } else {
@@ -55,7 +56,13 @@ export default class OtherThings extends Component {
       }
 
       return (
-        <ListItem button component="a" href={repo.html_url} target="_blank">
+        <ListItem
+          button
+          component="a"
+          href={repo.html_url}
+          target="_blank"
+          key={repo.html_url}
+        >
           <ListItemText
             primary={repo.name}
             secondary={`Last updated: ${date.toDateString()}`}
