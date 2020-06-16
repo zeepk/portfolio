@@ -7,7 +7,7 @@
   min-height: 100vh;
 }
 .focus-icon {
-  font-size: 100px;
+  font-size: 100px !important;
   color: #4e93dd;
   font-family: "Material Icons";
 }
