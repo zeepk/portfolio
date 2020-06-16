@@ -62,7 +62,7 @@ export default class ProjectGrid extends Component {
               <Project
                 title="Consultancy Support Site"
                 body="Business home page for a sample tech support company. Uses animations and parallax imagery for the background."
-                dev="Uses animations and parallax imagery for the background. Created as a template for additional requirements. Used animation libraries and "
+                dev="Uses animations and parallax imagery for the background. Created as a template for additional requirements. Uses animation libraries and transitions."
                 filename={SuperPC}
                 link="https://techsupportsite.netlify.app/"
               />
