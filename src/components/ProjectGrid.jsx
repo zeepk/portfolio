@@ -1,12 +1,10 @@
 import React, { Component } from "react"
 import Project from "./Project"
 import Grid from "@material-ui/core/Grid"
-import EMT from "../images/podcast.png"
 import SuperPC from "../images/superpc.png"
 import Wildlife from "../images/wildlife.png"
 import Restaurant from "../images/restaurant.png"
 import Arma from "../images/arma.png"
-import Payments from "../images/payments.png"
 import "../styles/ProjectGrid.css"
 import Fade from "react-reveal/Fade"
 
@@ -37,18 +35,7 @@ export default class ProjectGrid extends Component {
               />
             </Fade>
           </Grid>
-          <Grid className="project-grid-item" item xs={12} sm={6}>
-            <Fade top>
-              <Project
-                title="Sample Restaurant Site"
-                body="Site for customers to see restaurant menu and location."
-                dev="Full stack React and Django. Menu items dynamically fetched from Django REST API. Images automatically stored in AWS S3 upon upload. Google Maps integration to show location."
-                filename={Restaurant}
-                link="https://matt-sample-restaurant.netlify.app/"
-              />
-            </Fade>
-          </Grid>
-          <Grid className="project-grid-item" item xs={12} sm={6}>
+          {/* <Grid className="project-grid-item" item xs={12} sm={6}>
             <Fade top>
               <Project
                 title="Podcast Landing Page"
@@ -56,6 +43,17 @@ export default class ProjectGrid extends Component {
                 dev="Front end in React/JS. Component animations using react-reveal, play animation using vanilla JS. Created based on user requirements."
                 filename={EMT}
                 link="https://emtcast2.netlify.app/"
+              />
+            </Fade>
+          </Grid> */}
+          <Grid className="project-grid-item" item xs={12} sm={6}>
+            <Fade top>
+              <Project
+                title="Sample Restaurant Site"
+                body="Sample ite for customers to see restaurant menu and location."
+                dev="Full stack React and Django. Menu items dynamically fetched from Django REST API. Images automatically stored in AWS S3 upon upload. Google Maps integration to show location."
+                filename={Restaurant}
+                link="https://matt-sample-restaurant.netlify.app/"
               />
             </Fade>
           </Grid>
@@ -67,17 +65,6 @@ export default class ProjectGrid extends Component {
                 dev="Uses animations and parallax imagery for the background. Created as a template for additional requirements. Used animation libraries and "
                 filename={SuperPC}
                 link="https://techsupportsite.netlify.app/"
-              />
-            </Fade>
-          </Grid>
-          <Grid className="project-grid-item" item xs={12} sm={6}>
-            <Fade top>
-              <Project
-                title="Payment Manager Web App"
-                body="In-progress app for users to manage payments. Payment events can be added with a recurring date."
-                dev="Full stack with React and Django. User registration and auth is done with Django and React-Redux. Owner can manage users via the admin panel. "
-                filename={Payments}
-                link="https://payment-manager-test.herokuapp.com"
               />
             </Fade>
           </Grid>

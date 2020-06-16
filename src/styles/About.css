@@ -1,10 +1,10 @@
 .about-container {
   font-family: "Roboto";
   margin: 0 auto 0 auto;
-  padding-top: 15vh;
+  padding-top: 20vh;
   width: 90vw;
   max-width: 500px;
-  height: 85vh;
+  height: 100vh;
 }
 .grid-item {
   text-align: center;

@@ -33,7 +33,8 @@ class Container extends Component {
     const hr_style = {
       width: "80vw",
       opacity: 0.5,
-      marginBottom: "10vh",
+      margin: "0 auto 10vh auto",
+      backgroundColor: "gray",
     }
     return (
       <div className="container">
