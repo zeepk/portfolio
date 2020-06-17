@@ -51,7 +51,11 @@ export default class OtherThings extends Component {
             title="JavaScript/React"
           />
         )
-      } else if (repo.name === "image-shrinker") {
+      } else if (
+        repo.name === "image-shrinker" ||
+        repo.name === "cpu-monitor" ||
+        repo.name === "cloud-logging"
+      ) {
         icon = (
           <img
             src={Electron}
