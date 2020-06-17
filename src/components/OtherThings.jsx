@@ -10,6 +10,7 @@ import Python from "../images/python.png"
 import JS from "../images/js.png"
 import HTML from "../images/html5.png"
 import Svelte from "../images/svelte.png"
+import Electron from "../images/electron.png"
 import Form from "./Form"
 import axios from "axios"
 // import Twitch from '../images/twitch.gif';
@@ -42,15 +43,51 @@ export default class OtherThings extends Component {
       const date = new Date(repo.updated_at)
       let icon = repo.language
       if (repo.language === "JavaScript") {
-        icon = <img src={JS} className="github-icon" alt="javascript" />
+        icon = (
+          <img
+            src={JS}
+            className="github-icon"
+            alt="javascript"
+            title="JavaScript/React"
+          />
+        )
+      } else if (repo.name === "image-shrinker") {
+        icon = (
+          <img
+            src={Electron}
+            className="github-icon"
+            alt="electron"
+            title="Electron"
+          />
+        )
       } else if (repo.language === "Python" || repo.language === "Tcl") {
-        icon = <img src={Python} className="github-icon" alt="python" />
+        icon = (
+          <img
+            src={Python}
+            className="github-icon"
+            alt="python"
+            title="Python 🐍"
+          />
+        )
       } else if (repo.language === "HTML" || repo.language === "CSS") {
-        icon = <img src={HTML} className="github-icon" alt="html" />
+        icon = (
+          <img src={HTML} className="github-icon" alt="html" title="HTML" />
+        )
       } else if (repo.language === "Java") {
-        icon = <span className="material-icons mobile-icon">phone_iphone</span>
+        icon = (
+          <span className="material-icons mobile-icon" title="iOS/Android">
+            phone_iphone
+          </span>
+        )
       } else if (!repo.language) {
-        icon = <img src={Svelte} className="github-icon" alt="svelte" />
+        icon = (
+          <img
+            src={Svelte}
+            className="github-icon"
+            alt="svelte"
+            title="Svelte"
+          />
+        )
       } else {
         icon = <p>{repo.language}</p>
       }
