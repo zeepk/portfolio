@@ -42,16 +42,7 @@ export default class OtherThings extends Component {
     const sorted_github_data = github_data.map(repo => {
       const date = new Date(repo.updated_at)
       let icon = repo.language
-      if (repo.language === "JavaScript") {
-        icon = (
-          <img
-            src={JS}
-            className="github-icon"
-            alt="javascript"
-            title="JavaScript/React"
-          />
-        )
-      } else if (
+      if (
         repo.name === "image-shrinker" ||
         repo.name === "cpu-monitor" ||
         repo.name === "cloud-logging"
@@ -62,6 +53,15 @@ export default class OtherThings extends Component {
             className="github-icon"
             alt="electron"
             title="Electron"
+          />
+        )
+      } else if (repo.language === "JavaScript") {
+        icon = (
+          <img
+            src={JS}
+            className="github-icon"
+            alt="javascript"
+            title="JavaScript/React"
           />
         )
       } else if (repo.language === "Python" || repo.language === "Tcl") {
