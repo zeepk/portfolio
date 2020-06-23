@@ -45,6 +45,7 @@ export default class OtherThings extends Component {
       if (
         repo.name === "image-shrinker" ||
         repo.name === "cpu-monitor" ||
+        repo.name === "monitor" ||
         repo.name === "cloud-logging"
       ) {
         icon = (

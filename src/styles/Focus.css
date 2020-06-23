@@ -16,6 +16,6 @@
 }
 .focus-text {
   padding: 0 0 30px 0;
-  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   line-height: 120%;
 }
