@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+
 import Card from "@material-ui/core/Card"
 import Grid from "@material-ui/core/Grid"
 import List from "@material-ui/core/List"
@@ -12,6 +13,7 @@ import HTML from "../images/html5.png"
 import Svelte from "../images/svelte.png"
 import Electron from "../images/electron.png"
 import Form from "./Form"
+import Tweets from "./Tweets"
 import axios from "axios"
 // import Twitch from '../images/twitch.gif';
 
@@ -116,9 +118,9 @@ export default class OtherThings extends Component {
     return (
       <div className="other-things-container">
         <Grid container spacing={3}>
-          <Grid className="grid-item" item xs={12} sm={2}></Grid>
+          <Grid className="grid-item" item xs={12} sm={1}></Grid>
 
-          <Grid className="grid-item" item xs={12} sm={4}>
+          <Grid className="grid-item" item xs={12} sm={5}>
             <Card className="other-card-container">
               <List className="list">
                 <ListSubheader
@@ -128,17 +130,26 @@ export default class OtherThings extends Component {
                   target="_blank"
                 >
                   <img src={GithubIcon} className="github-icon" alt="github" />
-                  <h2 className="github-title">Github</h2>
+                  <h3 className="github-title">Github</h3>
                 </ListSubheader>
                 {sorted_github_data}
               </List>
             </Card>
           </Grid>
-          <Grid className="grid-item" item xs={12} sm={4}>
-            <Form />
+          <Grid className="grid-item" item xs={12} sm={5}>
+            <Tweets />
           </Grid>
-          <Grid className="grid-item" item xs={12} sm={2}></Grid>
+          <Grid className="grid-item" item xs={12} sm={1}></Grid>
         </Grid>
+        <div className="form-container">
+          <Grid container spacing={3}>
+            <Grid className="grid-item" item xs={12} sm={4}></Grid>
+            <Grid className="grid-item" item xs={12} sm={4}>
+              <Form />
+            </Grid>
+            <Grid className="grid-item" item xs={12} sm={4}></Grid>
+          </Grid>
+        </div>
       </div>
     )
   }

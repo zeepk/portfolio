@@ -36,5 +36,34 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-twitter`,
+      options: {
+        credentials: {
+          consumer_key: "38HWVABQ2c2xr9rzfdhbRBawI",
+          consumer_secret: "G8DRdxO4yx6tSPNH99eDhK7paRAlTjRgICoiC9hOzgMhS0GStV",
+          bearer_token:
+            "AAAAAAAAAAAAAAAAAAAAAOCRFQEAAAAATKiUEWyqSLQrrbU2VIYWMZIgmnY%3DARaXfhm64MDktHjlYfJ7t1v1ymK7zkGKjm5sK3bfMdpAD8FsDl",
+        },
+        queries: {
+          nameofthequery: {
+            endpoint: "statuses/user_timeline",
+            params: {
+              screen_name: "matthughes2112",
+              include_rts: false,
+              exclude_replies: true,
+              tweet_mode: "extended",
+            },
+          },
+          nameofanotherthequery: {
+            endpoint: "search/tweets",
+            params: {
+              q: "#gatsbyjs",
+              tweet_mode: "extended",
+            },
+          },
+        },
+      },
+    },
   ],
 }

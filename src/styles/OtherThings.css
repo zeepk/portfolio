@@ -58,3 +58,6 @@
 .MuiButton-root {
   text-transform: none !important;
 }
+.form-container {
+  margin: 5vh 0;
+}
