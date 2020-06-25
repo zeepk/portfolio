@@ -40,10 +40,9 @@ module.exports = {
       resolve: `gatsby-source-twitter`,
       options: {
         credentials: {
-          consumer_key: "38HWVABQ2c2xr9rzfdhbRBawI",
-          consumer_secret: "G8DRdxO4yx6tSPNH99eDhK7paRAlTjRgICoiC9hOzgMhS0GStV",
-          bearer_token:
-            "AAAAAAAAAAAAAAAAAAAAAOCRFQEAAAAATKiUEWyqSLQrrbU2VIYWMZIgmnY%3DARaXfhm64MDktHjlYfJ7t1v1ymK7zkGKjm5sK3bfMdpAD8FsDl",
+          consumer_key: process.env.consumer_key,
+          consumer_secret: process.env.consumer_secret,
+          bearer_token: process.env.bearer_token,
         },
         queries: {
           nameofthequery: {
