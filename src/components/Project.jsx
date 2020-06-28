@@ -9,12 +9,7 @@ function Project(props) {
   }
   return (
     <div className="project-container" style={style}>
-      <a
-        href={props.link}
-        className="project-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href={props.link} className="project-link">
         <img
           src={props.filename}
           alt="project"
