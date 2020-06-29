@@ -13,7 +13,7 @@ import HTML from "../images/html5.png"
 import Svelte from "../images/svelte.png"
 import Electron from "../images/electron.png"
 import Form from "./Form"
-// import Tweets from "./Tweets"
+import Tweets from "./Tweets"
 import axios from "axios"
 // import Twitch from '../images/twitch.gif';
 
@@ -137,7 +137,7 @@ export default class OtherThings extends Component {
             </Card>
           </Grid>
           <Grid className="grid-item" item xs={12} sm={5}>
-            {/* <Tweets /> */}
+            <Tweets />
           </Grid>
           <Grid className="grid-item" item xs={12} sm={1}></Grid>
         </Grid>
