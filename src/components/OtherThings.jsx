@@ -10,6 +10,7 @@ import ListSubheader from "@material-ui/core/ListSubheader"
 import Python from "../images/python.png"
 import JS from "../images/js.png"
 import HTML from "../images/html5.png"
+import Vue from "../images/🇻🇪 .png"
 import Svelte from "../images/svelte.png"
 import Electron from "../images/electron.png"
 import Form from "./Form"
@@ -26,7 +27,7 @@ export default class OtherThings extends Component {
   }
   componentWillMount() {
     axios
-      .get("https://api.github.com/users/zeepk/repos", {
+      .get("https://api.github.com/users/zeepk/repos?per_page=100", {
         headers: {
           Authorization: "8ecf1ab2ae445bc4abe3e7404b2c89bb8120fed8",
         },
@@ -80,6 +81,8 @@ export default class OtherThings extends Component {
         icon = (
           <img src={HTML} className="github-icon" alt="html" title="HTML" />
         )
+      } else if (repo.language === "Vue") {
+        icon = <img src={Vue} className="github-icon" alt="vue" title="Vue" />
       } else if (repo.language === "Java") {
         icon = (
           <span className="material-icons mobile-icon" title="iOS/Android">
