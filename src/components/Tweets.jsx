@@ -8,38 +8,38 @@ import ListSubheader from "@material-ui/core/ListSubheader"
 import TwitterIcon from "../images/twitter.png"
 
 const Tweets = () => {
-  const { allTwitterStatusesUserTimelineNameofthequery: data } = useStaticQuery(
-    graphql`
-      query {
-        allTwitterStatusesUserTimelineNameofthequery {
-          edges {
-            node {
-              created_at
-              id_str
-              full_text
-              user {
-                screen_name
-                name
-                profile_image_url_https
-                url
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-  const tweets = data.edges
-    .map(({ node }) => node)
-    .map(({ full_text, id_str, created_at }) => (
-      // <TweetCard key={id_str} text={full_text} id={id_str} />
-      <ListItem key={id_str}>
-        <ListItemText
-          primary={full_text}
-          secondary={new Date(created_at).toDateString()}
-        />
-      </ListItem>
-    ))
+  // const { allTwitterStatusesUserTimelineNameofthequery: data } = useStaticQuery(
+  //   graphql`
+  //     query {
+  //       allTwitterStatusesUserTimelineNameofthequery {
+  //         edges {
+  //           node {
+  //             created_at
+  //             id_str
+  //             full_text
+  //             user {
+  //               screen_name
+  //               name
+  //               profile_image_url_https
+  //               url
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
+  // const tweets = data.edges
+  //   .map(({ node }) => node)
+  //   .map(({ full_text, id_str, created_at }) => (
+  //     // <TweetCard key={id_str} text={full_text} id={id_str} />
+  //     <ListItem key={id_str}>
+  //       <ListItemText
+  //         primary={full_text}
+  //         secondary={new Date(created_at).toDateString()}
+  //       />
+  //     </ListItem>
+  //   ))
   return (
     <Card className="other-card-container">
       {/* <a href={`https://twitter.com/gatsbyjs`} target="_blank">
@@ -55,7 +55,7 @@ const Tweets = () => {
           <img src={TwitterIcon} className="github-icon" alt="twitter" />
           <h3 className="github-title">Twitter & #100DaysOfCode</h3>
         </ListSubheader>
-        {tweets}
+        {/* {tweets} */}
       </List>
     </Card>
   )

@@ -11,7 +11,12 @@ class About extends Component {
             I'm an enthusiastic, customer-focused full stack developer.
           </p>
           <p className="about-text">
-            My goal with every project is user experience perfection.
+            I have experience planning, prototyping, testing, deploying, and
+            maintaining apps and websites.
+          </p>
+          <p className="about-text">
+            I use JavaScript, React, Python, Django, HTML/CSS, and many other
+            tools to create the ideal user experience!
           </p>
         </div>
         <div className="buttons-container">

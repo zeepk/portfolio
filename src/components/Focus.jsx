@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import "../styles/Focus.css"
 import Grid from "@material-ui/core/Grid"
 import Me from "../images/me.jpg"
+import Clip from "../images/twitch-clip.mp4"
 import LightSpeed from "react-reveal/LightSpeed"
 import Fade from "react-reveal/Fade"
 export default class Focus extends Component {
@@ -11,6 +12,31 @@ export default class Focus extends Component {
         <Grid container spacing={3}>
           <Grid className="grid-item" item xs={12} sm={6}>
             <Fade>
+              {/* <div className="video"> */}
+              {/* <iframe
+                  // src="https://clips.twitch.tv/embed?clip=SingleSparklingSaladKappaPride&parent=localhost"
+                  src={Clip}
+                  className="twitch-clip"
+                  parent="matthughes.dev"
+                  title={"Twitch Clip"}
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  frameBorder="0"
+                  webkitallowfullscreen="true"
+                  mozallowfullscreen="true"
+                  allowFullScreen
+                  autoplay="true"
+                  muted="true"
+                  loop="true"
+                /> */}
+              {/* <video
+                  src={Clip}
+                  className="twitch-clip"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                ></video>
+              </div> */}
               <img src={Me} alt="Matt Hughes" className="me-image" />
             </Fade>
           </Grid>
