@@ -140,7 +140,7 @@ export default class OtherThings extends Component {
             </Card>
           </Grid>
           <Grid className="grid-item" item xs={12} sm={5}>
-            {/* <Tweets /> */}
+            <Tweets />
           </Grid>
           <Grid className="grid-item" item xs={12} sm={1}></Grid>
         </Grid>
