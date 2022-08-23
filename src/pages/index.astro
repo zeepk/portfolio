@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AboutMe from '../components/AboutMe.astro';
+import ProjectContainer from '../components/ProjectContainer.astro';
+---
+
+<Layout title="Matt Hughes">
+	<main>
+	<div class="flex justify-center w-full p-10">
+	<div class="flex flex-col flex-wrap items-center md:w-10/12 w-full">
+			<AboutMe />
+			<div class="p-10" />
+			<ProjectContainer />
+		</div>
+		</div>
+	</main>
+</Layout>

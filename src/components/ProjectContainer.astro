@@ -1,0 +1,33 @@
+---
+import Project from '../components/Project.astro';
+import Wildlife from '../images/wildlife.png';
+import Bot from '../images/bot.png';
+import Codey from '../images/codey.png';
+import Queue from '../images/queue.png';
+---
+<div class="w-full flex flex-row justify-center flex-wrap">
+	<Project
+		title="Animal Crossing Wildlife"
+		body="Webapp tracker to accompany a popular video game. Allows users to check off achievements and add their friends to see their progress as well. Creating an account is as simple as singing in with Google."
+		image={Wildlife}
+		repo="wildlife"
+		href="https://acwildlife.com" />
+	<Project
+		title="CodeyBot"
+		body="A Discord bot who sends messages in chat servers when Github events occur for the linked repository. Can alert communities when updates are pushed to a branch or a new release is created."
+		image={Codey}
+		repo="codeybot"
+		href="https://codey-bot.herokuapp.com/" />
+	<Project
+		title="Game Queue"
+		body="Live webapp made for a gaming community to help them queue up new players for each game. Users login with Twitch to add themselves to the list. Moderators defined in Auth0 can move players ahead in the list which updates live with Sockets - without refreshing your browser."
+		image={Queue}
+		repo="willsqueue"
+		href="https://willsqueue.herokuapp.com/" />
+	<Project
+		title="Animal Crossing Twitter Bot"
+		body="A bot who tweets out a random clothing item with an image from a database. The bot is scheduled to tweet every 4 hours on a cron job with a Raspberry Pi."
+		image={Bot}
+		repo="ac-twitter-bot"
+		href="https://twitter.com/ac_clothing_bot" />
+</div>

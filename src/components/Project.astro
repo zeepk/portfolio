@@ -1,0 +1,28 @@
+---
+import Github from '../images/github.png';
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+	image: string;
+	repo: string;
+}
+
+const { href, title, body, image, repo } = Astro.props as Props;
+---
+<div class="md:w-5/12 m-5 mb-20 w-full flex-row justify-center">
+	<a href={href}>
+		<img class="w-full hover:scale-105 transition-all duration-25 cursor-pointer" src={image} alt={title}  />
+	</a>
+<div class="w-full flex flex-row justify-between items-center">
+	<a href={href}>
+		<h2 class="my-3 mr-2 hover:underline">{title}</h2>
+	</a>
+	<a href={`https://github.com/zeepk/${repo}`} class="flex flex-row items-center justify-end">
+		<img class="w-5 mr-1" src={Github} alt={'github'}  />
+		<p class="my-3 hover:underline">source code</p>
+	</a>
+	
+</div>
+	<p>{body}</p>
+</div>
