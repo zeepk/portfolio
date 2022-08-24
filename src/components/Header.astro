@@ -1,15 +1,28 @@
 ---
-import Twitter from '../images/twitter.png'
-import Twitch from '../images/twitch.png'
-import Linkedin from '../images/linkedin.png'
-import Github from '../images/github.png'
-import Gmail from '../images/gmail.png'
-import HeaderLink from './HeaderLink.astro'
+import Twitter from '../images/twitter.png';
+import Twitch from '../images/twitch.png';
+import Linkedin from '../images/linkedin.png';
+import Github from '../images/github.png';
+import Gmail from '../images/gmail.png';
+import HeaderLink from './HeaderLink.astro';
 ---
+
 <div class="w-full flex flex-row justify-center flex-nowrap mb-20">
-	<HeaderLink href="https://twitter.com/matthughes2112" image={Twitter} text="Twitter"/>
-	<HeaderLink href="https://twitch.tv/zee_pk" image={Twitch} text="Twitch"/>
-	<HeaderLink href="https://www.linkedin.com/in/matthughes-dev/" image={Linkedin} text="Linkedin"/>
-	<HeaderLink href="https://www.github.com/zeepk" image={Github} text="Github"/>
-	<HeaderLink href="mailto:matt@matthughes.dev" image={Gmail} text="Email"/>
+    <HeaderLink
+        href="https://twitter.com/matthughes2112"
+        image={Twitter}
+        text="Twitter"
+    />
+    <HeaderLink href="https://twitch.tv/zee_pk" image={Twitch} text="Twitch" />
+    <HeaderLink
+        href="https://www.linkedin.com/in/matthughes-dev/"
+        image={Linkedin}
+        text="Linkedin"
+    />
+    <HeaderLink
+        href="https://www.github.com/zeepk"
+        image={Github}
+        text="Github"
+    />
+    <HeaderLink href="mailto:matt@matthughes.dev" image={Gmail} text="Email" />
 </div>
