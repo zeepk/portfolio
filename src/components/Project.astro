@@ -10,7 +10,7 @@ export interface Props {
 
 const { href, title, body, image, repo } = Astro.props as Props;
 ---
-<div class="md:w-5/12 m-5 mb-20 w-full flex-row justify-center">
+<div class="md:w-5/12 m-10 mb-20 w-full flex-row justify-center">
 	<a href={href}>
 		<img class="w-full hover:scale-105 transition-all duration-25 cursor-pointer" src={image} alt={title}  />
 	</a>

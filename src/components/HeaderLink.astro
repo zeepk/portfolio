@@ -1,0 +1,12 @@
+---
+export interface Props {
+	href: string;
+	image: string;
+	text: string;
+}
+
+const { href, image, text} = Astro.props as Props;
+---
+<a href={href} class="mx-6" title={text}>
+	<img class="w-10 min-w-[28px] hover:brightness-110 hover:scale-105 transition-all duration-25 cursor-pointer" src={image} />
+	</a>

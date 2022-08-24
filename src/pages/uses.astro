@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="things Matt Hughes uses">
+	<main>
+		<div class="p-10 flex flex-col">
+			<h1 class="text-3xl font-bold py-5">hardware</h1>
+			<a>macbook pro (old intel for personal, m1 for work)</a>
+			<a href="https://pcpartpicker.com/list/rHKz8Y" class="link">self built pc</a>
+			<a href="https://kinesis-ergo.com/keyboards/advantage2-keyboard/" class="link">kinesis advantage 2 keyboard</a>
+			<a href="https://www.logitechg.com/en-us/products/gaming-mice/g600-mmo-gaming-mouse.html" class="link">mmo mouse - logitech g600</a>
+			<a href="https://www.amazon.com/gp/product/B0812DKDD9" class="link">34in ultrawide monitor</a>
+			<h1 class="text-3xl font-bold py-5">software</h1>
+			<a>discord</a>
+			<a>firefox + dev edition</a>
+			<a>item2 and wsl2</a>
+			<a>neovim</a>
+			<a href="https://github.com/zeepk/dotfiles" class="link">dotfiles</a>
+			<a href="https://github.com/morhetz/gruvbox" class="link">gruvbox color scheme</a>
+			<a>datagrip</a>
+			<a>postman</a>
+			<a href="https://todoist.com/" class="link">todoist</a>
+			<a>1password</a>
+	</div>
+	</main>
+</Layout>
+<style>
+	a {
+		font-weight: 600;
+		color: slate;
+		text-decoration: none;
+		padding: 0.5rem 0;
+	}
+	a.link {
+		color: #679eff;
+		text-decoration: underline;
+	}
+	a.link:hover {
+		filter: brightness(0.8);
+	}
+</style>

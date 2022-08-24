@@ -1,8 +1,11 @@
 # Portfolio Site
+
 ## Tools
-- Astro
-- Tailwind
-- That's about it really
+
+-   Astro
+-   Tailwind
+-   That's about it really
+
 ## Commands (extend from Astro cmds)
 
 All commands are run from the root of the project:
@@ -15,4 +18,3 @@ All commands are run from the root of the project:
 | `npm run preview`      | Preview your build locally, before deploying       |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `npm run astro --help` | Get help using the Astro CLI                       |
-
