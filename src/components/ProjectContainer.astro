@@ -3,7 +3,7 @@ import Project from '../components/Project.astro';
 import Wildlife from '../images/wildlife.webp';
 import Bot from '../images/bot.webp';
 import Codey from '../images/codey.webp';
-import Queue from '../images/queue.webp';
+import Woodcut from '../images/woodcut.webp';
 ---
 
 <div class="w-full">
@@ -20,18 +20,17 @@ import Queue from '../images/queue.webp';
             href="https://acwildlife.com"
         />
         <Project
+            title="Woodcut"
+            body="Website for users to check their gaming progress. Login with Google to follow your friends and see multi-account activity on a data rich dashboard. Modern tech like NextJS and Go help with efficient page loads and data handling."
+            image={Woodcut}
+            repo="woodcut"
+            href="https://woodcut.dev/"
+        />
+        <Project
             title="CodeyBot"
             body="A Discord bot who sends messages in chat servers when Github events occur for the linked repository. Can alert communities when updates are pushed to a branch or a new release is created."
             image={Codey}
             repo="codeybot"
-            href="https://codey-bot.herokuapp.com/"
-        />
-        <Project
-            title="Game Queue"
-            body="Live webapp made for a gaming community to help them queue up new players for each game. Users login with Twitch to add themselves to the list. Moderators defined in Auth0 can move players ahead in the list which updates live with Sockets - without refreshing your browser."
-            image={Queue}
-            repo="willsqueue"
-            href="https://willsqueue.herokuapp.com/"
         />
         <Project
             title="Animal Crossing Twitter Bot"
